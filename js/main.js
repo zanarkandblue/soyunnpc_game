@@ -139,11 +139,13 @@ class Player {
                     break;
         
                 case "battle":
+                    GameMap.map[newY][newX]="empty";    
                     this.battle();
                     this.move_prompt(GameMap);
                     break;
         
                 case "treasure":
+                    GameMap.map[newY][newX]="empty"; 
                     alert("¡Has encontrado un cofre con provisiones! ¡Al parecer otros NPC han intentado dejar ayuda!")
                     this.treasure();
                     this.move_prompt(GameMap);
@@ -190,7 +192,11 @@ class Player {
                     } else {
                         alert("¡Abriste el cofre pero está vacío! Seguro los zombies lo han saqueado. ¡Qué pena!"); ;
                     }
-                this.potion();
+                   
+                 if (this.hp<this.max_hp && this.potion_count>0){
+                      this.potion();
+                        }
+                    
                 alert("¡Sigamos avanzando!")
 
     }
