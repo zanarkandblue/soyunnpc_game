@@ -482,7 +482,7 @@ async function setup_npc (){
     let setup_choice;
     let weapons; 
         // Cargar el archivo JSON de armas
-   fetch('/json/weapons.json')
+   fetch('./json/weapons.json')
    .then((response) => response.json())
    .then((weaponsData) => {
    // Ahora puedes acceder a los datos de armas en weaponsData
