@@ -1,0 +1,9 @@
+[
+    { "name": "puño", "power": 5 },
+    { "name": "hacha", "power": 10 },
+    { "name": "escopeta", "power": 15 },
+    { "name": "granada de mano", "power": 30 },
+    { "name": "cañón", "power": 60 },
+    { "name": "tanque", "power": 120 },
+    { "name": "rayo láser", "power": 240 }
+]
